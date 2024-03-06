@@ -1,6 +1,6 @@
 # Spotifying the Map
 
-Spotting the Map is a web-based platform that allows users to explore the world, share experiences, and connect with others through interactive mapping features. Users can drop pins, leave messages, attach Spotify songs, and explore pins shared by other users.
+Spotifying the Map is a web-based platform that allows users to explore the world, share experiences, and connect with others through interactive mapping features. Users can drop pins, leave messages, attach Spotify songs, and explore pins shared by other users.
 
 ## Features
 
@@ -12,11 +12,11 @@ Spotting the Map is a web-based platform that allows users to explore the world,
 
 ## Usage
 
-To use Spotting the Map, simply navigate to the website and start exploring the map. Zoom into locations of interest, drop pins, leave messages, and attach Spotify songs to share your experiences with others.
+To use Spotifying the Map, simply navigate to the website and start exploring the map. Zoom into locations of interest, drop pins, leave messages, and attach Spotify songs to share your experiences with others.
 
 ## Contributing
 
-If you'd like to contribute to Spotting the Map, please fork the repository and submit a pull request with your proposed changes.
+If you'd like to contribute to Spotifying the Map, please fork the repository and submit a pull request with your proposed changes.
 
 ## License
 
