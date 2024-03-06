@@ -1,10 +1,10 @@
-# Spotting the Map
+# Spotifying the Map
 
 Spotting the Map is a web-based platform that allows users to explore the world, share experiences, and connect with others through interactive mapping features. Users can drop pins, leave messages, attach Spotify songs, and explore pins shared by other users.
 
 ## Features
 
-- Zoom into locations on a worldwide map
+- Zoom in to locations on a worldwide map
 - Anonymously drop pins
 - Write messages to accompany pins
 - Attach Spotify songs to pins
