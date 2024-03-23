@@ -1,0 +1,6 @@
+/* Custom styles for the Spotifying the Map application */
+
+#map {
+    height: 100vh; /* Make the map take up the full height of the viewport */
+    width: 100%; /* Ensure the map spans the full width of the container */
+}

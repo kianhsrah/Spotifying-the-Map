@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('partials/_head.ejs') %>
+  <body>
+<%- include('partials/_header.ejs') %>
+    <main role="main" class="container mt-4">
+      <div id="map"></div> <!-- Map container -->
+      <div class="text-center">
+        <h1>spotifying_the_map</h1>
+      </div>
+    </main>
+  </body>
+<%- include('partials/_footer.ejs') %>
+  <script src="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js"></script>
+  <script>
+    // Inject Mapbox Access Token from server-side environment variable
+    mapboxgl.accessToken = '<%- process.env.MAPBOX_ACCESS_TOKEN %>';
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="/js/main.js"></script>
+</html>

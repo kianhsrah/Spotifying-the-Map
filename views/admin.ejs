@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('partials/_head.ejs') %>
+<body>
+<%- include('partials/_header.ejs') %>
+<main role="main" class="container mt-4">
+  <h1>Reported Markers Admin Interface</h1>
+  <div id="reportedMarkers"></div>
+</main>
+</body>
+<%- include('partials/_footer.ejs') %>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script>
+  function loadReportedMarkers() {
+    axios.get('/api/reportedMarkers')
+      .then(function (response) {
+        const markers = response.data;
+        const markersContainer = document.getElementById('reportedMarkers');
+        markersContainer.innerHTML = markers.map(marker => `
+          <div>
+            <p>Message: ${marker.message}</p>
+            <p>Song: ${marker.songDetails.artist} - ${marker.songDetails.title}</p>
+            <button onclick="approveMarker('${marker._id}')">Approve</button>
+            <button onclick="removeMarker('${marker._id}')">Remove</button>
+          </div>
+        `).join('');
+      })
+      .catch(function (error) {
+        console.error('Error loading reported markers:', error);
+      });
+  }
+
+  function approveMarker(markerId) {
+    axios.post('/api/approveMarker', { markerId: markerId })
+      .then(function () {
+        alert('Marker approved');
+        loadReportedMarkers();
+      })
+      .catch(function (error) {
+        console.error('Error approving marker:', error);
+      });
+  }
+
+  function removeMarker(markerId) {
+    axios.post('/api/removeMarker', { markerId: markerId })
+      .then(function () {
+        alert('Marker removed');
+        loadReportedMarkers();
+      })
+      .catch(function (error) {
+        console.error('Error removing marker:', error);
+      });
+  }
+
+  // Initial load of reported markers
+  window.onload = loadReportedMarkers;
+</script>
+</html>

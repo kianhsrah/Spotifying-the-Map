@@ -1,27 +1,35 @@
 # Spotifying the Map
 
-Spotifying the Map is a web-based platform that allows users to explore the world, share experiences, and connect with others through interactive mapping features. Users can drop pins, leave messages, attach Spotify songs, and explore pins shared by other users.
+Spotifying the Map is a web-based application that merges the joy of music with the discovery of new locations. Users can anonymously place markers on a global map, each marker containing a message and a song from Spotify, creating a unique way to share and discover music and sentiments across the globe.
+
+## Overview
+
+The application's backend is constructed with the Node.js/Express framework, leveraging MongoDB for database management and Mongoose ORM for data modeling. The frontend is developed using Vanilla JS for interactivity and Bootstrap for styling. Integration with Mapbox provides the interactive map functionality, while the Spotify Web API enables song search and attachment to markers.
 
 ## Features
 
-- Zoom in to locations on a worldwide map
-- Anonymously drop pins
-- Write messages to accompany pins
-- Attach Spotify songs to pins
-- Explore pins shared by other users
+- **Interactive Map Display**: Users navigate a global map to explore or zoom into locations.
+- **Marker Placement**: Click or tap to place markers on the map.
+- **Message Association**: Users can attach messages to their markers.
+- **Spotify Song Search and Attachment**: Search for and attach a Spotify song to a marker.
+- **Marker Interaction**: View messages and song details by interacting with markers.
+- **Moderation**: Report inappropriate markers, messages, or songs.
 
-## Usage
+## Getting started
 
-To use Spotifying the Map, simply navigate to the website and start exploring the map. Zoom into locations of interest, drop pins, leave messages, and attach Spotify songs to share your experiences with others.
+### Requirements
 
-## Contributing
+- Node.js
+- MongoDB
+- A Spotify Developer account for API credentials
 
-If you'd like to contribute to Spotifying the Map, please fork the repository and submit a pull request with your proposed changes.
+### Quickstart
 
-## License
+1. Clone the repository.
+2. Install dependencies with `npm install`.
+3. Set up your `.env` file based on `.env.example`.
+4. Run the server with `npm start`.
 
-This project is licensed under the [MIT License](LICENSE).
+### License
 
-## Contact
-
-For questions or feedback, please contact [your_email@example.com](mailto:your_email@example.com).
+Copyright (c) 2024.
